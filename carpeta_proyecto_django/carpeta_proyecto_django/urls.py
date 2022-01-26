@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from carpeta_proyecto_django.carpeta_proyecto_django.views import saludo
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('hola/',saludo)
 ]
