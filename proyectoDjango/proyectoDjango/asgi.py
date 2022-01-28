@@ -1,5 +1,5 @@
 """
-ASGI config for carpeta_proyecto_django project.
+ASGI config for proyectoDjango project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'carpeta_proyecto_django.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'proyectoDjango.settings')
 
 application = get_asgi_application()
