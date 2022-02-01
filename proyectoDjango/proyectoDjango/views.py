@@ -8,6 +8,6 @@ def saludo(request):
 def dia_De_Hoy(request):
     return HttpResponse(f"hoy es: {datetime.now()}") 
 
-def nombre_de(request,nombre):
-    return HttpResponse(f'HOLAAAA!! {nombre}')
+def nombre_de(request,nombree):
+    return HttpResponse("HOLAAAA!!" + nombree )
 

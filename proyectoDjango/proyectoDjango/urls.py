@@ -24,7 +24,7 @@ urlpatterns = [
     path('saludo/',saludo),
     path('hoy/', dia_De_Hoy),
     # como hacer un patch dinamico 
-    # el argumento "nombre" que recibe la def "nombre_de" es recibido a traves de lo que se escriba en la url
-    path('mi_nombre_es/<nombre>', nombre_de),
+    # el argumento "nombree" que recibe la def "nombre_de" es recibido a traves de lo que se escriba en la url
+    path('mi_nombre_es/<nombree>', nombre_de),
 ]
  
