@@ -17,9 +17,14 @@ from pathlib import Path
 from django.contrib import admin
 from django.urls import path
 
-from proyectoDjango.views import saludo
+from proyectoDjango.views import saludo, dia_De_Hoy, nombre_de
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludo/',saludo),
+    path('hoy/', dia_De_Hoy),
+    # como hacer un patch dinamico 
+    # el argumento "nombre" que recibe la def "nombre_de" es recibido a traves de lo que se escriba en la url
+    path('mi_nombre_es/<nombre>', nombre_de),
 ]
+ 
