@@ -17,7 +17,7 @@ from pathlib import Path
 from django.contrib import admin
 from django.urls import path
 
-from proyectoDjango.views import saludo, dia_De_Hoy, nombre_de
+from proyectoDjango.views import saludo, dia_De_Hoy, nombre_de, template1, en_que_ano_naciste
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,6 +25,12 @@ urlpatterns = [
     path('hoy/', dia_De_Hoy),
     # como hacer un patch dinamico 
     # el argumento "nombree" que recibe la def "nombre_de" es recibido a traves de lo que se escriba en la url
-    path('mi_nombre_es/<nombree>', nombre_de),
+    path('mi_nombre_es/<nombre>', nombre_de),
+    # primer template
+    path('template_1/', template1),
+    #ejercicio del año en el que naciste
+    path('en_que_año_naciste/<edad>/', en_que_ano_naciste),
+    
+    
 ]
  
